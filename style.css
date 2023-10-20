@@ -1,0 +1,134 @@
+/*COLORS*/
+:root {
+    --sedan-color: #E28625;
+    --suvs-color: #006971;
+    --luxury-color: #004140;
+    --header-button-color: #F2F2F2
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*Small screens*/
+@media (min-width: 640px) {
+}
+
+/*Medium screens*/
+@media (min-width: 768px) {
+    height: 100vh;
+}
+
+/*Large screens*/
+@media (min-width: 1024px) {
+    body {
+        height: 100vh;
+    }
+
+    .cards-container {
+        flex-direction: row;
+    }
+}
+
+/*Extra Large screens*/
+@media (min-width: 1280px) {
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.cards-container {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card {
+    width: 920px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 40px;
+}
+
+.card:nth-child(2) {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.card:nth-last-child(1) {
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+
+.svg-container {
+    margin-bottom: 35px;
+}
+
+h2 {
+    color: var(--header-button-color);
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+p {
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+    opacity: 70%;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 25px;
+    line-height: 25px;
+}
+
+.card button {
+    width: fit-content;
+    display: flex;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    min-width: 146px;
+    line-height: 25px;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    border: 1px solid transparent;
+}
+
+.card button:active {
+    color: white;
+    border-color: white;
+}
+
+.sedan-card button {
+    color: var(--sedan-color);
+}
+
+.suvs-card button {
+    color: var(--suvs-color);
+}
+
+.luxury-car button {
+    color: var(--luxury-color);
+}
+
+.sedan-card {
+    background-color: var(--sedan-color)
+}
+
+.suvs-card {
+    background-color: var(--suvs-color)
+}
+
+.luxury-car {
+    background-color: var(--luxury-color)
+}
